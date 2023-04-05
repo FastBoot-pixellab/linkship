@@ -19,19 +19,19 @@ function Avatar({ username, className }) {
 
     return (
         <div className={`${className}`}>
-            <button id="avatar" onClick={() => { setMenuOpened(!menuOpened) }} className={`bg-[#734aff] mb-2 flex items-center justify-center min-w-[45px] max-w-[45px] min-h-[45px] max-h-[45px] rounded-full text-white text-xl unselectable`}>
+            <button id="avatar" onClick={() => { setMenuOpened(!menuOpened) }} className={`bg-[#734aff] mb-2 flex items-center justify-center min-w-[40px] max-w-[40px] min-h-[40px] max-h-[40px] rounded-full text-white text-xl unselectable`}>
                 {username[0].toUpperCase()}
             </button>
             <div id="avatarMenu" class={`z-10 absolute left-1/2 -translate-x-1/2 sm:left-auto divide-y divide-gray-100 rounded-lg shadow w-44 bg-gray-600 ${!menuOpened && 'hidden'}`}>
-                <ul class="py-2 text-sm text-gray-300" aria-labelledby="dropdownDefaultButton">
+                <ul class="py-2 text-gray-300" aria-labelledby="dropdownDefaultButton">
                     <li>
-                        <Link href="/myst" class="block px-4 py-2 hover:bg-gray-500 hover:text-white">Профиль</Link>
+                        <Link href="/myst" class="block px-4 py-2 hover:bg-gray-500 hover:text-white">Profile</Link>
                     </li>
                     <li>
-                        <Link href="/settings" class="block px-4 py-2 hover:bg-gray-500 hover:text-white">Настройки</Link>
+                        <Link href="/settings" class="block px-4 py-2 hover:bg-gray-500 hover:text-white">Settings</Link>
                     </li>
                     <li>
-                        <a onClick={() => { exitAccount() }} class="text-red-400 block px-4 py-2 hover:bg-gray-500 hover:text-red-300 cursor-pointer">Выйти</a>
+                        <a onClick={() => { exitAccount() }} class="text-red-400 block px-4 py-2 hover:bg-gray-500 hover:text-white cursor-pointer">Log out</a>
                     </li>
                 </ul>
             </div>
