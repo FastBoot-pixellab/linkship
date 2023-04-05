@@ -14,8 +14,9 @@ function Home() {
                     <span className="text-4xl font-bold text-gray-700">The best place for your profile</span>
                     <span className="text-xl text-gray-600">Bio, social media or just a links to anything? <b>There's everything you need.</b></span>
                     <div>
-                        <input type="text" disabled name="username" className="py-1 px-2 outline outline-1 outline-gray-400 rounded-l-md" value="https://linkship.ru/" />
-                        <input type="text" name="username" className="py-1 px-2 outline outline-1 outline-gray-400 rounded-r-md" placeholder="awesome_man" />
+                        <input type="text" disabled className="font-bold py-1 px-2 outline outline-1 outline-[#5422ff] rounded-l-md w-[160px]" value="https://linkship.ru/" />
+                        <input type="text" name="username" className="py-1 px-2 outline outline-1 outline-gray-400 rounded-r-md" placeholder={`awesome_cat_${Math.floor(Math.random() * (Math.floor(99) - Math.ceil(10) + 1) + Math.ceil(10))}`} />
+                        <button className="ml-2 py-[5px] px-2 bg-[#5422ff] text-white rounded-md font-bold">Let's go!</button>
                     </div>
                 </div>
             </div>
