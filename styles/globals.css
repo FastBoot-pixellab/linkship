@@ -34,3 +34,10 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+input {
+    transition: 0.2s outline;
+}
+input:focus {
+    outline: 1px solid #5422ff;
+}
